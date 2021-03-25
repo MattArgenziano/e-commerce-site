@@ -1,9 +1,32 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+body {
+    background-color: #9BC4CB;
+}
+
+.navbar-nav {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .navbar {
     font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+nav {
+    background-color: #9BC4CB;
 }
 
 .nav-item {
@@ -12,9 +35,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav-link a:hover {
-    background-color: black;
+.nav-item > a {
+    color: black;
+}
+
+.nav-item > a:hover {
     color: white;
+}
+
+a > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    color: black;
 }
 
 .carousel-wrapper {
@@ -38,4 +74,37 @@
 .carousel button {
     color: white;
     font-weight: 800;
+}
+
+.card {
+    background-color: #dcc7be;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    margin: 0 auto;
+}
+
+.card > img {
+    object-position: center;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card > .card-body > a.btn {
+    background-color: #0b4f6c;
+    border: none;
+    font-weight: 300;
+}
+
+.card > .card-body > a.btn:hover {
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 300;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.8);
 }
