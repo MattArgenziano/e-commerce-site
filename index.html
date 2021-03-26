@@ -24,18 +24,15 @@
                         <a class="nav-link" href="#featured-products">Featured Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about-us">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Contact
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                            <li><a class="dropdown-item" href="#">Location</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#location">Location</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -74,7 +71,7 @@
     </div>
     
     <!-- FEATURED PRODUCTS -->
-    <div class="container" id="featured-products">
+    <div class="container mt-5 pb-5" id="featured-products">
         <div class="row text-center">
             <h1>Featured Products</h1>
         </div>
@@ -117,15 +114,81 @@
         </div>
     </div>
 
-    <!-- TESTIMONIALS -->
-    <div class="carousel-item">
-        <img src="..." alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
+    <!-- ABOUT -->
+    <div class="text-center" id="about-us">
+        <h1 class="pt-5">About Us</h1>
+        <h2 class="mt-5">Meet the Team</h2>
+        <div class="container text-center">
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        <h3>Mary Johnson</h3>
+                        <h5>Sales Associate</h5>
+                    </div>
+                    <div class="col-sm">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        <h3>Tyler Smith</h3>
+                        <h5>Product Manager</h5>
+                    </div>
+                    <div class="col-sm">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        <h3>Blake Hughes</h3>
+                        <h5>CEO</h5>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-sm">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit officia tempora quod corrupti eaque doloribus! Aliquid eveniet rerum tempore, laboriosam illum quae ducimus beatae, accusantium minima doloremque deserunt doloribus, omnis exercitationem distinctio dolores quis natus in. Rem, modi omnis hic dolorem quas aperiam, ex reprehenderit minus ut cupiditate vitae quis eligendi tenetur maxime, provident tempore voluptas! Explicabo incidunt ratione accusantium. Maiores ab perspiciatis a harum? Explicabo totam corrupti sequi suscipit cumque! Accusantium id doloribus ratione reiciendis, dolores porro omnis ipsa molestias. Amet voluptatem molestiae nihil deleniti dolores optio ab, iure ratione totam, assumenda sint voluptas molestias iste ea quasi voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- CONTACT US -->
+    <div class="container pt-5 pb-5 mx-auto" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <form>
+            <div class="form-group row">
+                <div class="col-sm-10 text-center w-100">
+                  <label for="inputPassword3">Name</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Enter your name...">
+                </div>
+              </div>
+            <div class="form-group row mt-3">
+              
+              <div class="col-sm-10 w-100 text-center">
+                <label for="inputEmail3">Email</label>
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your email...">
+              </div>
+            </div>
+            <div class="form-group text-center mt-3">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+            <div class="form-group row mt-3">
+              <div class="col-sm-10 w-100 text-center">
+                <button type="submit" class="btn btn-outline-success">Send Message</button>
+              </div>
+            </div>
+        </form>
+    </div>
+    
+    <!-- LOCATION -->
+    <div class="container-fluid text-center pb-5 w-100" id="location">
+        <h1>Where are we located?</h1>
+        <h5>We are located right in the heart of Long Beach, CA</h5>
+        <h5>559 E 11th St, Long Beach, CA 90813</h5>
+        <h3>Map</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLiCIi7U2GUKm-e8NxBkpnXbSsnysrlr8&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
